@@ -3,7 +3,7 @@ import streamlit as st
 st.title("BMI Calculator")
 
 weight  = st.number_input("Enter your weight in Kgs")
-status = st.ratio("Select your height format:", ("cms", "meters", "foot"))
+status = st.radio("Select your height format:", ("cms", "meters", "foot"))
 
 try: 
     if status == "cms":
